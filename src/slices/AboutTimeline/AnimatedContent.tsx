@@ -99,6 +99,204 @@ export default function AnimatedContent(): JSX.Element {
         },
       }
     );
+
+    gsap.set(".line-discovery", { opacity: 0 });
+    gsap.fromTo(
+      ".line-discovery",
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".discovery-container",
+          start: "top bottom-=20%",
+          end: "top+=10% center",
+          toggleActions: "play resume resume resume",
+        },
+      }
+    );
+
+    gsap.set(".ball-discovery", { opacity: 0 });
+    gsap.fromTo(
+      ".ball-discovery",
+      { opacity: 0, y: -120 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: ".discovery-container",
+          start: "top bottom-=20%",
+          end: "top-=20% center",
+          toggleActions: "play resume resume reverse",
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.set("#discovery-title", { opacity: 0, y: 10 });
+    gsap.fromTo(
+      "#discovery-title",
+      { opacity: 0, y: 10 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#discovery-content-container",
+          start: "top bottom-=20%",
+          end: "top+=20% center",
+          toggleActions: "play resume resume reverse",
+        },
+      }
+    );
+
+    gsap.set("#discovery-paragraph", { opacity: 0, y: 20 });
+    gsap.fromTo(
+      "#discovery-paragraph",
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#discovery-content-container",
+          start: "top bottom-=30%",
+          end: "top+=20% center",
+          toggleActions: "play resume resume resume",
+        },
+      }
+    );
+
+    gsap.set("#formulation-line", { opacity: 0 });
+    gsap.fromTo(
+      "#formulation-line",
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#formulation-container",
+          start: "top bottom-=20%",
+          end: "top+=10% center",
+          toggleActions: "play resume resume resume",
+        },
+      }
+    );
+
+    gsap.set("#formulation-circle", { opacity: 0 });
+    gsap.fromTo(
+      "#formulation-circle",
+      { opacity: 0, y: -90 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#formulation-container",
+          start: "top bottom-=20%",
+          end: "top-=20% center",
+          toggleActions: "play resume resume reverse",
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.set("#development-line", { opacity: 0 });
+    gsap.fromTo(
+      "#development-line",
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#formulation-container",
+          start: "top bottom-=20%",
+          end: "top+=10% center",
+          toggleActions: "play resume resume resume",
+        },
+      }
+    );
+
+    gsap.set("#development-circle", { opacity: 0 });
+    gsap.fromTo(
+      "#development-circle",
+      { opacity: 0, y: -90 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#development-container",
+          start: "top bottom-=20%",
+          end: "top-=20% center",
+          toggleActions: "play resume resume reverse",
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.set("#formulation-title", { opacity: 0, y: 10 });
+    gsap.fromTo(
+      "#formulation-title",
+      { opacity: 0, y: 10 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#formulation-content",
+          start: "top bottom-=20%",
+          end: "top+=20% center",
+          toggleActions: "play resume resume reverse",
+        },
+      }
+    );
+
+    gsap.set("#formulation-paragraph", { opacity: 0, y: 20 });
+    gsap.fromTo(
+      "#formulation-paragraph",
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#formulation-content",
+          start: "top bottom-=30%",
+          end: "top+=20% center",
+          toggleActions: "play resume resume resume",
+        },
+      }
+    );
+
+    gsap.set("#development-title", { opacity: 0, y: 10 });
+    gsap.fromTo(
+      "#development-title",
+      { opacity: 0, y: 10 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#development-content",
+          start: "top bottom-=20%",
+          end: "top+=20% center",
+          toggleActions: "play resume resume reverse",
+        },
+      }
+    );
+
+    gsap.set("#development-paragraph", { opacity: 0, y: 20 });
+    gsap.fromTo(
+      "#development-paragraph",
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#development-content",
+          start: "top bottom-=30%",
+          end: "top+=20% center",
+          toggleActions: "play resume resume resume",
+        },
+      }
+    );
   });
   return (
     <>
@@ -108,27 +306,22 @@ export default function AnimatedContent(): JSX.Element {
             Form
           </p>
           <div className="flex items-center flex-col lg:flex-row">
-            <div id="circle" className="rounded-full h-[9px] w-[9px] bg-slate-100 form-ball"></div>
-            <div id="line" className="w-[1px] h-20 lg:w-40 lg:h-[1px] bg-slate-100 form-line"></div>
+            <div className="rounded-full h-[9px] w-[9px] bg-slate-100 form-ball"></div>
+
+            <div className="w-[1px] h-20 lg:w-40 lg:h-[1px] bg-slate-100 form-line"></div>
           </div>
         </div>
-        <div id="center" className="relative flex justify-center items-center my-6">
+        <div className="relative flex justify-center items-center my-6">
           <div className="w-52 h-52 rounded-full relative overflow-hidden ">
-            <div
-              id="squiggle"
-              className="bg-[length:36px] w-[150%] h-[150%] absolute -top-1/4 -left-1/4 center-squiggle flex justify-center items-center">
+            <div className="bg-[length:36px] w-[150%] h-[150%] absolute -top-1/4 -left-1/4 center-squiggle flex justify-center items-center">
               <p className="">F.Y.S</p>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center gap-4 lg:justify-center">
           <div className="flex items-center flex-col lg:flex-row">
-            <div
-              id="line"
-              className="w-[1px] h-20 lg:w-40 lg:h-[1px] bg-slate-100 function-line"></div>
-            <div
-              id="circle"
-              className="rounded-full h-[9px] w-[9px] bg-slate-100 function-ball"></div>
+            <div className="w-[1px] h-20 lg:w-40 lg:h-[1px] bg-slate-100 function-line"></div>
+            <div className="rounded-full h-[9px] w-[9px] bg-slate-100 function-ball"></div>
           </div>
           <p className="uppercase font-display" id="function">
             Function
@@ -156,44 +349,54 @@ export default function AnimatedContent(): JSX.Element {
           <p className="font-body text-5xl">How we work</p>
         </div>
         <div className="flex flex-col items-center gap-4 lg:max-w-2xl mx-auto">
-          <div className="flex items-center flex-col mt-10">
-            <div id="line" className="w-[1px] h-28 bg-slate-100"></div>
-            <div id="circle" className="rounded-full h-[9px] w-[9px] bg-slate-100"></div>
+          <div className="flex items-center flex-col mt-10 discovery-container">
+            <div className="w-[1px] h-28 bg-slate-100 line-discovery"></div>
+            <div className="rounded-full h-[9px] w-[9px] bg-slate-100 ball-discovery"></div>
           </div>
           <div className="flex flex-col">
-            <div className="flex flex-col gap-4 items-center">
-              <p className="uppercase font-display">Discovery</p>
-              <p className="font-body text-4xl text-center">
+            <div id="discovery-content-container" className="flex flex-col gap-4 items-center">
+              <p id="discovery-title" className="uppercase font-display">
+                Discovery
+              </p>
+              <p id="discovery-paragraph" className="font-body text-4xl text-center">
                 We take the time to listen and immerse ourselves in your business and understand
                 your goals. We strive to balance aesthetic and conversion optimization to ensure
                 your investment produces ROI.
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4">
+          <div id="formulation-container" className="flex flex-col items-center gap-4">
             <div className="flex items-center flex-col mt-20">
-              <div id="line" className="w-[1px] h-20 bg-tertiary"></div>
-              <div id="circle" className="rounded-full h-[9px] w-[9px] bg-tertiary"></div>
+              <div id="formulation-line" className="w-[1px] h-20 bg-slate-100" />
+              <div
+                id="formulation-circle"
+                className="rounded-full h-[9px] w-[9px] bg-slate-100"></div>
             </div>
-            <div className="flex flex-col">
+            <div id="formulation-content" className="flex flex-col">
               <div className="flex flex-col gap-4 items-center">
-                <p className="uppercase font-display">Formulation</p>
-                <p className="font-body text-4xl text-center">
+                <p id="formulation-title" className="uppercase font-display">
+                  Formulation
+                </p>
+                <p id="formulation-paragraph" className="font-body text-4xl text-center">
                   Our talented and dynamic designers will work within your brand guidelines to
                   create a detailed prototype of your new website.
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4">
+          <div id="development-container" className="flex flex-col items-center gap-4">
             <div className="flex items-center flex-col mt-20">
-              <div id="line" className="w-[1px] h-20 bg-tertiary"></div>
-              <div id="circle" className="rounded-full h-[9px] w-[9px] bg-tertiary"></div>
+              <div id="development-line" className="w-[1px] h-20 bg-slate-100"></div>
+              <div
+                id="development-circle"
+                className="rounded-full h-[9px] w-[9px] bg-slate-100"></div>
             </div>
-            <div className="flex flex-col">
+            <div id="development-content" className="flex flex-col">
               <div className="flex flex-col gap-4 items-center">
-                <p className="uppercase font-display">Development</p>
-                <p className="font-body text-4xl text-center">
+                <p id="development-title" className="uppercase font-display">
+                  Development
+                </p>
+                <p id="development-paragraph" className="font-body text-4xl text-center">
                   After approval of the prototype, our development team will get to work building
                   your new website. Our quality assurance team will complete in-depth testing to
                   ensure a smooth launch.
@@ -203,8 +406,9 @@ export default function AnimatedContent(): JSX.Element {
           </div>
           <div className="flex flex-col items-center gap-4">
             <div className="flex items-center flex-col mt-20">
-              <div id="line" className="w-[1px] h-20 bg-tertiary"></div>
-              <div id="circle" className="rounded-full h-[9px] w-[9px] bg-tertiary"></div>
+              <div className="w-[1px] h-20 bg-tertiary"></div>
+
+              <div className="rounded-full h-[9px] w-[9px] bg-tertiary"></div>
             </div>
             <div className="flex flex-col mb-16">
               <div className="flex flex-col gap-4 items-center">
