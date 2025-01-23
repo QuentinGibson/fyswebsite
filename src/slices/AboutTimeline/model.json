@@ -1,0 +1,18 @@
+{
+  "id": "contact_timeline",
+  "type": "SharedSlice",
+  "name": "AboutTimeline",
+  "description": "ContactTimeline",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {}
+    }
+  ]
+}

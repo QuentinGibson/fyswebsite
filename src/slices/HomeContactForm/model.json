@@ -1,0 +1,16 @@
+{
+  "id": "home_contact_form",
+  "type": "SharedSlice",
+  "name": "HomeContactForm",
+  "description": "HomeContactForm",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

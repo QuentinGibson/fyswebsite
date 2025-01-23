@@ -1,0 +1,48 @@
+{
+  "id": "home_testimonies",
+  "type": "SharedSlice",
+  "name": "HomeTestimonies",
+  "description": "HomeTestimonies",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Header",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        },
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "content",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": false,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

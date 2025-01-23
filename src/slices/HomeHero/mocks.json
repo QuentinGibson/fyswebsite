@@ -1,0 +1,85 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"starter": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nisi officia voluptate et esse Lorem ad nostrud culpa amet labore et."
+						}
+					}
+				]
+			},
+			"header": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Freedom"
+						}
+					}
+				]
+			},
+			"top_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ea ad labore ullamco aute labore eu commodo in aliqua anim. Reprehenderit id incididunt ea. Labore est ad consectetur irure anim non quis sint ea commodo eiusmod."
+						}
+					}
+				]
+			},
+			"bottom_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ullamco pariatur reprehenderit id do irure est commodo nisi quis. Velit irure incididunt esse proident sint velit mollit ex deserunt nulla voluptate."
+						}
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+					"width": 3456,
+					"height": 4320
+				},
+				"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+				"width": 3456,
+				"height": 4320,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"cta_link": {
+				"key": "702c3fc8-d15f-4ab1-9481-8123ebe3c5ff",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "theory"
+				}
+			}
+		},
+		"items": []
+	}
+]

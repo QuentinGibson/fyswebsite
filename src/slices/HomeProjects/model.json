@@ -1,0 +1,28 @@
+{
+  "id": "home_projects",
+  "type": "SharedSlice",
+  "name": "HomeProjects",
+  "description": "HomeProjects",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Header",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

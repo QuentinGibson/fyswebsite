@@ -1,0 +1,28 @@
+{
+  "id": "porfolio_header",
+  "type": "SharedSlice",
+  "name": "PorfolioHeader",
+  "description": "PorfolioHeader",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Header",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

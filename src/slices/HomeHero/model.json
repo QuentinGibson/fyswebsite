@@ -1,0 +1,74 @@
+{
+  "id": "home_hero",
+  "type": "SharedSlice",
+  "name": "HomeHero",
+  "description": "HomeHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "starter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Starter",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          }
+        },
+        "header": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Header",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        },
+        "top_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "top_content",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          }
+        },
+        "bottom_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "bottom_content",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          }
+        },
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "CTA_Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": false,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

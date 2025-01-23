@@ -1,0 +1,16 @@
+{
+  "id": "case_studies",
+  "type": "SharedSlice",
+  "name": "CaseStudies",
+  "description": "CaseStudies",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

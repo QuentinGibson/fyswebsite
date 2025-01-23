@@ -1,0 +1,72 @@
+{
+  "id": "home_services",
+  "type": "SharedSlice",
+  "name": "HomeServices",
+  "description": "HomeServices",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          }
+        },
+        "header": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Header",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "services": {
+          "type": "Group",
+          "config": {
+            "label": "Services",
+            "repeat": true,
+            "fields": {
+              "service_header": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Service Header",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "single": "heading2"
+                }
+              },
+              "service_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Service Description",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "single": "paragraph"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

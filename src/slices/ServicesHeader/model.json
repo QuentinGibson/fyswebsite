@@ -1,0 +1,37 @@
+{
+  "id": "services_header",
+  "type": "SharedSlice",
+  "name": "ServicesHeader",
+  "description": "ServicesHeader",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "header": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Header",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        },
+        "pitch": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Pitch",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
