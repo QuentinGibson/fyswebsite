@@ -41,9 +41,8 @@ export default function UserForm({ services, handleSubmit }: UserFormProps) {
         <div className="py-6 mx-4 grid grid-flow-row gap-6">
           <div className="grid sm:grid-cols-2 gap-6">
             <div>
-              <form.Field
-                name="firstName"
-                children={(field) => (
+              <form.Field name="firstName">
+                {(field) => (
                   <div className="flex flex-col text-sm">
                     <label className="font-bold mb-2" htmlFor={field.name}>
                       First Name*
@@ -70,11 +69,11 @@ export default function UserForm({ services, handleSubmit }: UserFormProps) {
                         </p>
                       ))}
                   </div>
-                )}></form.Field>
+                )}
+              </form.Field>
             </div>
-            <form.Field
-              name="lastName"
-              children={(field) => (
+            <form.Field name="lastName">
+              {(field) => (
                 <div className="flex flex-col text-sm">
                   <label className="font-bold mb-2" htmlFor={field.name}>
                     Last Name*
@@ -102,11 +101,11 @@ export default function UserForm({ services, handleSubmit }: UserFormProps) {
                       </p>
                     ))}
                 </div>
-              )}></form.Field>
+              )}
+            </form.Field>
           </div>
-          <form.Field
-            name="services"
-            children={(field) => (
+          <form.Field name="services">
+            {(field) => (
               <div className="flex flex-col text-sm">
                 <label className="font-bold mb-2 text-sm" htmlFor={field.name}>
                   Service you are interested in*
@@ -140,10 +139,10 @@ export default function UserForm({ services, handleSubmit }: UserFormProps) {
                     </p>
                   ))}
               </div>
-            )}></form.Field>
-          <form.Field
-            name="emailAddress"
-            children={(field) => (
+            )}
+          </form.Field>
+          <form.Field name="emailAddress">
+            {(field) => (
               <div className="flex flex-col text-sm">
                 <label className="font-bold mb-2 text-sm" htmlFor={field.name}>
                   Email Address*
@@ -170,10 +169,10 @@ export default function UserForm({ services, handleSubmit }: UserFormProps) {
                     </p>
                   ))}
               </div>
-            )}></form.Field>
-          <form.Field
-            name="message"
-            children={(field) => (
+            )}
+          </form.Field>
+          <form.Field name="message">
+            {(field) => (
               <div className="flex flex-col text-sm">
                 <label className="font-bold mb-2 text-sm" htmlFor={field.name}>
                   Message*
@@ -198,11 +197,11 @@ export default function UserForm({ services, handleSubmit }: UserFormProps) {
                     </p>
                   ))}
               </div>
-            )}></form.Field>
+            )}
+          </form.Field>
 
-          <form.Subscribe
-            selector={(state) => [state.canSubmit, state.isSubmitting]}
-            children={([canSubmit, isSubmitting]) => (
+          <form.Subscribe selector={(state) => [state.canSubmit, state.isSubmitting]}>
+            {([canSubmit, isSubmitting]) => (
               <div className="flex flex-col">
                 <button
                   type="submit"
@@ -212,7 +211,7 @@ export default function UserForm({ services, handleSubmit }: UserFormProps) {
                 </button>
               </div>
             )}
-          />
+          </form.Subscribe>
           <div className="flex flex-col">
             <p className="text-primary text-[12px] font-medium">* We don't share your data.</p>
           </div>
