@@ -213,7 +213,7 @@ export default function UserForm({ services, handleSubmit }: UserFormProps) {
             )}
           </form.Subscribe>
           <div className="flex flex-col">
-            <p className="text-primary text-[12px] font-medium">* We don't share your data.</p>
+            <p className="text-primary text-[12px] font-medium">* We don&apos;t share your data.</p>
           </div>
         </div>
       </form>
